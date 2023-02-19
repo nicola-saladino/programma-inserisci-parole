@@ -49,7 +49,7 @@ public class FXMLController {
              updateTxtResult();
          }
          long endTime = System.nanoTime();
-         txtTempiEsecuzione.appendText("Inserimento: " + (endTime - startTime) + " nanosecondi\n");
+         txtTempiEsecuzione.appendText("Inserimento della parola: "+ parola + " "+" in" + (endTime - startTime) + " nanosecondi\n");
     }
 
     @FXML
@@ -79,7 +79,7 @@ public class FXMLController {
     		updateTxtResult();
     	}
     	long endTime = System.nanoTime();
-        txtTempiEsecuzione.appendText("Cancellazione: " + (endTime - startTime) + " nanosecondi\n");
+        txtTempiEsecuzione.appendText("Cancellazione della parola: "+ parolaSelezionata+" "+ "in" + (endTime - startTime) + " nanosecondi\n");
     	
     }
 
