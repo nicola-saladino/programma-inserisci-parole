@@ -29,5 +29,9 @@ public class Parole{
 	public void reset() {
 		elenco.clear();
 	}
+	
+	public void cancellaParola(String p) {
+	    elenco.remove(p);
+	}
 
 }
